@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+header{
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 33px;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navbar{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+.navbar{
+    font-size: 15px;
+    font-weight: 600;
+}
+.navbar li{
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    cursor: pointer;
+
+}
+.navbar li:hover{
+    border-bottom: 2px solid white;
+    color: rgb(0, 255, 149);
+}
+#menu-icon{
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+section{
+    padding-left: 340px;
+    color: white;
+}
+
+.hero-text h4{
+    padding-top: 35px;
+    color: white;
+    font-size: 30px;
+}
+.hero-text h1{
+    font-family: cursive;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+.hero-text p{
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+    width: 80%;
+}
+
+.buttons{
+    display: flex;
+    gap: 2rem;
+}
+.button1{
+    background-color: #39a942;
+    border-radius: 50px ;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transform: all .55s ease;
+}
+.button1:hover{
+    background: transparent;
+    border: 1px solid white;
+}
+.button2{
+    background-color: #133917;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    transform: all .50s ease;
+}
+.button2:hover{
+    background: white;
+    border: 1px solid white;
+    color: black;
+    
+}
+section img{
+    width: 400px;
+    margin-right: 200px;
+    border-radius: 50%;
+    border: 5px double #39a942;
+
+}
+.icons a{
+    text-decoration: none;
+
+}
+.icons{
+    position: absolute;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    height: 15%;
+    justify-content: space-between;
+}
+.icons a{
+    color: white;
+    font-size: 25px;
+    transition: all .40s ease;
+}
+.icons a:hover{
+    color: #38703d;
+    transform: translateY(-5px);
+}
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1340px){
+    section img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 45px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+}
